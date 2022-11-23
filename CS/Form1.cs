@@ -23,7 +23,7 @@ namespace UseModifiers {
             string format = "Page {0} of {1}";
             graph.Font = graph.DefaultFont;
             graph.BackColor = Color.Transparent;
-            RectangleF r = new RectangleF(0, 0, 0, graph.Font.Height);
+            RectangleF r = new RectangleF(0, 0, 0, ((Font)graph.Font).Height);
 
             // Create a brick.
             PageInfoBrick brick = graph.DrawPageInfo(PageInfo.NumberOfTotal,

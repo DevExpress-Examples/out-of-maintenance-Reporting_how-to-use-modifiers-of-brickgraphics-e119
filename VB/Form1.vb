@@ -25,7 +25,7 @@ Namespace UseModifiers
 			Dim format As String = "Page {0} of {1}"
 			graph.Font = graph.DefaultFont
 			graph.BackColor = Color.Transparent
-			Dim r As New RectangleF(0, 0, 0, graph.Font.Height)
+			Dim r As New RectangleF(0, 0, 0, CType(graph.Font, Font).Height)
 
 			' Create a brick.
 			Dim brick As PageInfoBrick = graph.DrawPageInfo(PageInfo.NumberOfTotal, format, Color.Black, r, BorderSide.None)
